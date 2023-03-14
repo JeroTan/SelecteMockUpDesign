@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--FOR Privacy and educational purposes I will not include meta tags for searching-->
+	<title>Home | Selecta Ice Cream</title>
+	<meta name="viewport" content="width=450, initial-scale=1.0">
+	<link rel="icon" type="image" href="https://www.selectaphilippines.com/etc/designs/walls/favicon.ico">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+	<!--My Stylesheet-->
+	<link rel="stylesheet" href="stylesheet/stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--For Smooth Scrolling-->
+
+	<script>
+	$(document).ready(function()
+	{
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) 
+		{
+	    	// Make sure this.hash has a value before overriding default behavior
+	    	if (this.hash !== "") 
+	    	{
+	     		// Prevent default anchor click behavior
+	     		event.preventDefault();
+	     		// Store hash
+	    		var hash = this.hash;
+	    		// Using jQuery's animate() method to add smooth page scroll
+	    		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	    		$('html, body').animate
+	    		({
+	        		scrollTop: $(hash).offset().top
+	    		}
+	    		, 800, function()
+	    		{
+	        	// Add hash (#) to URL when done scrolling (default click behavior)
+	        	window.location.hash = hash;
+	     		});
+	    	} // End if
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<header class="pos_absolute pos_zindex1">
+		<div class="pos-f-t my_navbar"> 
+
+			<div class="collapse visibility2" id="navbarToggleExternalContent">
+				<div class="p-4 my_navcolor visibility2 nav_dropdown padding_0">
+					<ul class="text-white txt_font2 margin_0 padding_0 padding_50px-top">
+						<li class="my_listprops"><a class="link1 my_color1 txt_size2" href="index.html">Home</a></li>
+						<li class="my_listprops"><a class="link1 my_color1 txt_size2" href="https://shopee.ph/selectaphilippines" target="_blank">Online Shop</a></li>
+						<li class="my_listprops"><a class="link1 my_color1 txt_size2" href="About_Us.html">About Us</a></li>
+						<li class="my_listprops"><a class="link1 my_color1 txt_size2" href="https://www.facebook.com/SelectaNegosyoPH/" target="_blank">Ka-Negosyo</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-dark my_navbar my_navcolor my_navflex flex_justifycontent_center flex_aligncenter">
+				<div class="flex_aligncenter height_100prc visibility1">
+					<span class="my_listprops margin_20pxLF visibility1"><a class="link1 my_color1 txt_size2" href="index.html">Home</a></span>
+					<span class="my_listprops margin_20pxLF visibility1"><a class="link1 my_color1 txt_size2" href="https://shopee.ph/selectaphilippines" target="_blank">Online Shop</a></span>
+				</div>
+				<div class="flex_aligncenter height_100prc box_siz pos_fit1 pos_size1">
+					<a class="link1 my-color1 link-style txt_font1 margin_auto" href="index.html"><img class="img_fit1" src="assets/Selecta_Logo.png"></a>
+				</div>
+
+				<div class="flex_aligncenter height_100prc visibility1">
+					<span class="my_listprops margin_20pxLF visibility1"><a class="link1 my_color1 txt_size2" href="About_Us.html">About Us</a></span>
+					<span class="my_listprops margin_20pxLF visibility1"><a class="link1 my_color1 txt_size2" href="https://www.facebook.com/SelectaNegosyoPH/" target="_blank">Ka-Negosyo</a></span>
+				</div>
+
+				<div class="my_navbutpos bg-danger">
+    			<button class="navbar-toggler active_border visibility my_color1" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+    			</button>
+    			</div>
+  			</nav>
+  			<span class="line my_color1"></span>
+		</div>
+	</header>
+
+	<section><!--header title-->
+		<div class="container margin_150pxT flex_flexwrap bg_color2 border_radius1 my_color2 padding_0 banner1" >
+			<div class="flex_grow2 flex_basis0 width_1000px flex_col margin_auto margin_10prc">
+				<div class="txt_align txt_font3 txt_change">
+				BUILDING A HAPPIER WORLD WITH SELECTA
+				</div>
+				<div class="txt_align txt_font4 margin_3prcT txt_change2">
+				Proud Sponsor of the world happiness
+				</div>
+			</div>
+			<div class="flex_grow1 flex_basis0 visibility3">
+				<img class=" img_cover width_100prc visibility3" src="assets/Banner_right.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="flex flex_aligncenter flex_col"><!--Ice Cream Container-->
+		<h2 class="my_title1 txt_font5"><a class="my_color2" href="#IceCreamSection" id="IceCreamSection">Ice Cream</a></h2>
+		<div class="container bg_color3 my_color2 border_radius1 padding_0 banner1">
+			<div class="flex flex_col flex_aligncenter txt_font2 margin_30pxT margin_10pxB">
+				<h2 class="txt_weight" id="title">Supreme</h2>
+				<div class="dropdown ">
+				<button class="btn btn-light dropdown-toggle txt_weight" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Choose Ice cream Variety</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+   					<a class="dropdown-item" id="Supreme_click" href="#IceCreamSection">Supreme</a>
+    				<a class="dropdown-item" id="Classic_click" href="#IceCreamSection">Classic</a>
+    				<a class="dropdown-item" id="Cornetto_click" href="#IceCreamSection">Cornetto</a>
+    				<a class="dropdown-item" id="Magnum_click" href="#IceCreamSection">Magnum</a>
+    				<a class="dropdown-item" id="Hersheys_click" href="#IceCreamSection">Hersheys</a>
+    				<a class="dropdown-item" id="IcecreamStick_click" href="#IceCreamSection">Icecream-Stick</a>
+  				</div>
+  				</div>
+  			</div>
+  			<div class="flex flex_justifycontent_center margin_30pxT"><span class="line2"></span></div>
+		<section class="row margin_2prc display_on" id="Supreme_container"><!--Supreme Ice Cream-->
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/global/pack_shot/cookies&cream-32035966-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Cookies & Cream Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036179-1383322-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Rocky Road Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086035950-1383240-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Double Dutch Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/global/pack_shot/coffee_crumble_1.5l_new-32035962-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Coffee Crumble Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/global/pack_shot/choco_almond_fudge-32089921-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Choco Almond Fudge Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086043368-1383369-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Black Forest Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/quezo_real-32035977-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Quezo Real Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/philippines/pack_shot/4800086042293-1383360-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Mango Graham Cake</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/ube_macapuno-32063045-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Ube Macapuno Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/halo-halo-32063041-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Halo-halo Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/philippines/pack_shot/4800086036209-1386642-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Pistachio & Cashew</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/banana_graham_crunch-32062847-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Banana Graham Crunch Ice</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img class="size2" src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/chocohazelnut_truffle_brownie-32062837-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Choco Hazelnut Truffle Brownie Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img class="size2" src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/coco_mango_mochi-32062846-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Supreme Coco Mango Mochi Ice Cream</h3>
+			</div>
+		</section>
+
+		<section class="row margin_2prc display_off" id="Classic_container"><!--Classic-->
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036032-1383305-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Super Thick Vanilla Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036025-1383299-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Super Thick Super Chocolate Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036001-1383300-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Super Thick Mango</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036094-1386644-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Super Thick Strawberry Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036056-1383307-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Super Thick Ube Royale Ice Cream</h3>
+			</div>
+		</section>
+
+		<section class="row margin_2prc display_off" id="Cornetto_container"><!--Cornetto-->
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/cornetto/philippines/pack_shot/cookies_&_cream_disc_opened-31583615-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cornetto Disc White Choco Cookies & Cream Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/cornetto/philippines/pack_shot/chocolate_closed-31583592-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cornetto Chocolate Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/cornetto/philippines/pack_shot/milk_tea_disc_opened-31583637-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cornetto Disc Milk Tea Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/cornetto/philippines/pack_shot/choco_cookie_disc_open-31583587-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cornetto Disc Black Choco Cookie Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/cornetto/australia/pack_shot/8999999056193_cornettovanilla-1249093-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cornetto Vanilla Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/cornetto/philippines/pack_shot/cookies_&_dream_closed-31583623-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cornetto Cookies & Dream Ice Cream</h3>
+			</div>
+		</section>
+
+		<section class="row margin_2prc display_off" id="Magnum_container"><!--Magnum-->
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/magnum/new_zealand/pack_shot/9310016800725_magnumminisalmond-1250339-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Minis Ice Cream Stick Almond (6x45ml)</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/global/pack_shot/1404705-32073620-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Ice Cream Pint Classic</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/global/pack_shot/magnum_pint_almond-32073635-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Ice Cream Pint Almond</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/heart/global/pack_shot/1601334-32073631-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Ice Cream Pint White</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/magnum/philippines/pack_shot/8999999005610-1386709-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Almond Ice Cream Bar</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/magnum/malaysia/pack_shot/8999999035624-2169097-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Minis Ice Cream Stick Classic (6x45ml)</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/magnum/philippines/pack_shot/8999999045555-1386715-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Ice Cream Stick White Almond</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/magnum/philippines/pack_shot/8999999005689-1386711-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Ice Cream Stick Classic</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://www.selectaphilippines.com/content/dam/unilever/magnum/philippines/pack_shot/8999999046958-1386717-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Magnum Mini Classic and White Almond Ice Cream Bars, 6 Pieces</h3>
+			</div>
+		</section>
+
+		<section class="row margin_2prc display_off" id="Hersheys_container"><!--Hersheys-->
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086045102-1386684-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Hersheys's Cookies 'N' Cream Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/salted_caramel_1.3l-31583730-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Hersheys's Mini Dark Fudges Kisses Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086045119-1386686-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Hersheys's Cookies N' Chocolate Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/dark_fudge_1.3l-31583749-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Hersheys's Mini Dark Fudges Kisses Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086045119-1386686-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Hersheys's Cookies 'N' Chocolate Ice Cream</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086043467-1389198-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Hersheys's Milk Chocolate With Almond Ice Cream</h3>
+			</div>
+		</section>
+
+		<section class="row margin_2prc display_off" id="IceCreamStick_container"><!--Ice Cream Stick-->
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036513-1383332-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Cookies & Cream Ice Cream Stick</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036506-1383331-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Quezo Real Ice Cream Stick</h3>
+			</div>
+			<div class="col margin_2prc flex flex_col flex_justifycontent_center size2">
+				<div class="flex flex_justifycontent_center">
+					<img src="https://asset-apac.unileversolutions.com/content/dam/unilever/heart/philippines/pack_shot/4800086036520-1383333-png.png.ulenscale.226x226.png">
+				</div>
+				<h3 class="txt_font2 txt_weight txt_align my_color4">Selecta Rocky Road Ice Cream Stick</h3>
+			</div>
+		</section>
+		</div>
+		
+	</section>
+
+	<section class="footer_1 width_100prc flex_col flex_aligncenter margin_100pxT bg_color2 banner1"><!--THe Visit Page-->
+		<span class="my_color2 margin_50pxT margin_10pxB txt_font2 txt_size3 txt_align">
+			Visit The Official Website of Selecta Philippines
+		</span>
+			<a  class="btn btn-primary btn-sm width_100px margin_50pxB custom_button1 txt_weight" target="_blank" href="https://www.selectaphilippines.com/home.html">Click Here</a>
+	</section>
+
+	<footer class="footer_2 width_100prc flex flex_flexwrap bg_color2 banner1">
+		<div class="txt_font2 flex_grow2 width_300px margin_10prcLF margin_30pxB my_color2"><!--Disclaimer-->
+			This is only a redesign of Selecta's official website. The sole purpose of this project are for educational use. Any related images and other media are belongs to the rights of Selecta. This is a non-commercial website and by no means do not reproduce. No cash or products are circulated and taken by this website.
+		</div>
+
+		<div class="flex_grow1 flex flex_justifycontent_center width_300px margin_30pxB"><!--Social Media-->
+			<div class="flex flex_col flex_wrap">
+			<div class="margin_10pxB"><a class="txt_font2 txt_size1 my_color2" target="_blank" href="https://www.facebook.com/selectaphilippines"><i class="fab fa-facebook"></i> Facebook </a></div>
+			<div class="margin_10pxB"><a class="txt_font2 txt_size1 my_color2" target="_blank" href="https://www.instagram.com/selectaphilippines/"><i class="fab fa-instagram"></i> Instagram </a></div>
+			<div class="margin_10pxB"><a class="txt_font2 txt_size1 my_color2" target="_blank" href="https://www.youtube.com/channel/UC2d61v0-sIArM1WJqP55ghg"><i class="fab fa-youtube-square"></i> Youtube </a></div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script/index.js" type="text/javascript"></script>
+</body>
+</html>
